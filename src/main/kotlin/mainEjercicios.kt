@@ -29,55 +29,57 @@ fun main(args: Array<String>) {
     System.out.println("Indica opcion \n 1. Suma \n 2. multiplica \n 3. divide \n 4. media \n 5. Salir");
     var eleccion = readLine()?.toInt() as Int;
 
-  //  do {
+    do {
+        System.out.println("Indica opcion \n 1. Suma \n 2. multiplica \n 3. divide \n 4. media \n 5. Salir");
+        var eleccion = readLine()?.toInt() as Int;
         when(eleccion) {
             1 -> suma();
             2 -> multiplica();
             3 -> divide();
             4 -> media();
         }
-   /*     System.out.println("Indica opcion \n 1. Suma \n 2. multiplica \n 3. divide \n 4. media \n 5. Salir");
-        var eleccion = readLine()?.toInt() as Int;
-    }while (eleccion != 5);*/
+    }while (eleccion != 5);
 
 }
 
-fun suma(){
-    println("Indique valor 1");
-    var num1 = readLine()?.toInt() as Int;
-    println("Indique valor 2");
-    var num2 = readLine()?.toInt() as Int;
-    println("la suma es igual a  " + (num1 + num2));
-}
+// FUNCIONES QUE LLAMA EL WHEN PARA CADA CASO
 
-fun multiplica(){
-    println("Indique valor 1");
-    var num1 = readLine()?.toInt() as Int;
-    println("Indique valor 2");
-    var num2 = readLine()?.toInt() as Int;
-    println("Indique valor 3");
-    var num3 = readLine()?.toInt() as Int;
-    println("la multiplicación es igual a " + (num1 * num2 * num3) );
-}
+    fun suma(){
+        println("Indique valor 1");
+        var num1 = readLine()?.toInt() as Int;
+        println("Indique valor 2");
+        var num2 = readLine()?.toInt() as Int;
+        println("la suma es igual a  " + (num1 + num2));
+    }
 
-fun divide(){
-    println("Indique valor 1");
-    var num1 = readLine()?.toInt() as Int;
-    println("Indique valor 2");
-    var num2 = readLine()?.toInt() as Int;
-    println("Indique valor 3");
-    var num3 = readLine()?.toInt() as Int;
-    println("Indique valor 4");
-    var num4 = readLine()?.toInt() as Int;
-    println("la división es igual a " + (num1 / num2 / num3 / num4) );
-}
+    fun multiplica(){
+        println("Indique valor 1");
+        var num1 = readLine()?.toInt() as Int;
+        println("Indique valor 2");
+        var num2 = readLine()?.toInt() as Int;
+        println("Indique valor 3");
+        var num3 = readLine()?.toInt() as Int;
+        println("la multiplicación es igual a " + (num1 * num2 * num3) );
+    }
 
-fun media(){
-    println("Indique valor 1");
-    var num1 = readLine()?.toInt() as Int;
-    println("Indique valor 2");
-    var num2 = readLine()?.toInt() as Int;
-    println("Indique valor 3");
-    var num3 = readLine()?.toInt() as Int;
-    println("la media es igual a " + ((num1 + num2 + num3) / 3) );
-}
+    fun divide(){
+        println("Indique valor 1");
+        var num1 = readLine()?.toInt() as Int;
+        println("Indique valor 2");
+        var num2 = readLine()?.toInt() as Int;
+        println("Indique valor 3");
+        var num3 = readLine()?.toInt() as Int;
+        println("Indique valor 4");
+        var num4 = readLine()?.toInt() as Int;
+        println("la división es igual a " + (num1 / num2 / num3 / num4) );
+    }
+
+    fun media(){
+        println("Indique valor 1");
+        var num1 = readLine()?.toInt() as Int;
+        println("Indique valor 2");
+        var num2 = readLine()?.toInt() as Int;
+        println("Indique valor 3");
+        var num3 = readLine()?.toInt() as Int;
+        println("la media es igual a " + ((num1 + num2 + num3) / 3) );
+    }
