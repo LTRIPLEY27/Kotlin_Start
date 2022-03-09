@@ -21,9 +21,9 @@ fun main(args: Array<String>) {
     System.out.println("Ingrese ubicación tiburón");
     val ubicacion = readLine().toString() as String;
 
-    val tiburonsin = Tiburon(nombre, especie, tipo, descripcion, familia, ubicacion);
+    val tiburonsin = Tiburon(nombre, especie, tipo, descripcion,  familia, ubicacion, 14);
 
-    val tibu = Tiburon("blanco", "white shark", "carnivoro", "gran blanco", "cetaceos", "mar");
+    val tibu = Tiburon("blanco", "white shark", "carnivoro", "gran blanco", "cetaceos", "mar", 15);
 /*
     JOptionPane.showInputDialog("Ingrese valor");
     val respuesta = readLine().toString() as String;

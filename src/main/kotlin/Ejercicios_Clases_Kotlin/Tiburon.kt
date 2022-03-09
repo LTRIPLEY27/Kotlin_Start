@@ -6,7 +6,7 @@ class Tiburon : Animal,  Alimentacion{
     private var familia : String = "";
     private var ubicacion : String = "";
     //llamado al constructor heredado con ésta sintáxis
-    constructor(nombre: String, especie: String, tipo: String, descripcion: String, familia :String, ubicacion : String) : super(nombre, especie, tipo, descripcion) {
+    constructor(nombre: String, especie: String, tipo: String, descripcion: String, familia :String, ubicacion : String, edadPromedio : Int) : super(nombre, especie, tipo, descripcion, edadPromedio) {
         this.familia = familia;
         this.ubicacion = ubicacion;
     }
